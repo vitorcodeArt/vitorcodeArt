@@ -1,0 +1,77 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f8fc;
+    padding: 1rem;
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+.menuPokemon {
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+}
+
+
+.caracteristicas {
+    width: 50%;
+    height: 100vh;
+    right: 1rem;
+    background-color: rgb(73, 154, 116);
+    display: grid;
+    grid-template-rows: .7fr 1fr 2.1fr;
+    overflow: hidden;
+    position: fixed;
+    border-radius: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        width: 100%;
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4em;
+        background: rgba(0, 0, 0, 0.878);
+    }
+}
+@media screen and (min-width: 1420px) {
+    .content {
+        width: 100%;
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+    body {
+        display: grid;
+    }
+    .caracteristicas {
+        width: 34%;
+        height: 100vh;
+        right: 0;
+        background-color: rgb(73, 154, 116);
+        display: grid;
+        grid-template-rows: .7fr 1fr 2.1fr;
+        overflow: hidden;
+        position: fixed;
+    }
+}
+@media screen and (max-height: 720px) {
+
+    .caracteristicas {
+        overflow: scroll;
+    }
+}
